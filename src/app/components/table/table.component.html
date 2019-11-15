@@ -1,0 +1,25 @@
+<table class="table">
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+    </thead>
+    <tbody> 
+        <!-- <tr class="product" *ngFor="let product of results">
+            <td>{{product.productId}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.description}}</td>
+        </tr> -->
+         <!-- <app-product 
+            *ngFor="let product of results"
+            [product]="product"
+        ></app-product>  -->
+        <tr 
+            *ngFor="let product of results"
+            [product]="product"
+            app-product 
+        >
+
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,14 @@
+<div class="list-products">
+    <app-table
+    [results]="productList"
+    ></app-table>
+    <app-paginator
+        *ngIf="totalProducts"
+        [pageSize]="pageSize"
+        [totalResults]="totalProducts"
+        [pageNumber]="pageNumber"
+        (changeSize)="onChangeSize($event)"
+        (changePage)="onChangePage($event)"
+    >
+    </app-paginator>
+</div>
